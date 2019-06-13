@@ -14,12 +14,12 @@ const Navigation = () => {
         <div className="menu">
           <div>
             <div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Resume</a></li>
+              <ul className = "list">
+                <li className = "list__item"><a href="#">Home</a></li>
+                <li className = "list__item"><a href="#">About</a></li>
+                <li className = "list__item"><a href="#">Contact Us</a></li>
+                <li className = "list__item"><a href="#">Skills</a></li>
+                <li className = "list__item"><a href="#">Resume</a></li>
               </ul>
             </div>
           </div>
