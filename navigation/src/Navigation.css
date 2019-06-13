@@ -66,6 +66,7 @@ body {
   height: 50px;
   width: 50px;
   opacity: 0;
+  cursor: pointer;
 }
 
 .hamburger { /* this will be the square that the hamburger icon will be inside of */
