@@ -1,0 +1,48 @@
+:root { /* CSS Vars */
+  --primaryColor: rgba(13, 110, 139, 0.75);
+  --overlayColor: rgba(24, 39, 51, 0.85);
+  --menuSpeed: 0.75s;
+}
+
+* { /* Reset Styling */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem; /* Centers the content a little bit */
+}
+
+.showcase {
+  background-color: var(--primaryColor);
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* if we had a background image: add z-index = -1 */
+}
+
+.showcase__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* since .showcase doesn't have a height for the :before, we set it to 100% here */
+}
